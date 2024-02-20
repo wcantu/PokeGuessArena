@@ -1,11 +1,15 @@
 import React from 'react';
-import './Styles/styles.css';
+import './Styles/Tailwind.css';
+import Button from './Components/Button'
+
+
 
 function App() {
   return (
-    <div >
-      {/* No content */}
-    </div>
+    <>
+    
+      
+    </>
   );
 }
 
