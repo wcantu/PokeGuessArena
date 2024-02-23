@@ -1,12 +1,14 @@
 import React from 'react';
-import './Styles/Tailwind.css';
-import Button from './Components/Button'
-
+import PokemonRangeButtons from './Components/genrangebuttons';
+import './Styles/tailwind.css'
 
 
 function App() {
   return (
     <>
+    <PokemonRangeButtons/>
+
+
     
       
     </>
