@@ -1,18 +1,19 @@
+// App.tsx
 import React from 'react';
-import PokemonRangeButtons from './Components/genrangebuttons';
-import './Styles/tailwind.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import GenSelectPage from './Pages/genSelect';
+import MainPage from './Pages/mainpage'; // Import your MainPage component
 
-
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-    <PokemonRangeButtons/>
-
-
-    
-      
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<GenSelectPage />} /> {/* This makes GenSelectPage the default page */}
+        <Route path="/genSelect" element={<GenSelectPage />} />
+        <Route path="/mainpage" element={<MainPage />} /> {/* Add your MainPage route here */}
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

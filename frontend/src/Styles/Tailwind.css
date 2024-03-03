@@ -2,8 +2,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-
-
   body {
   
       display: flex;
@@ -16,20 +14,38 @@
     
   }
 
-
   .genbutton {
-    display: flex;  
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start; /* Align items to the start of the cross axis (horizontal) */
+    justify-content: center; /* Center items along the main axis (vertical) */
+    position: absolute;
+    top:  400%; /* Align to the middle vertically */
   }
 
+  .genbutton button {
+    margin-bottom: 20px; /* Increase the margin-bottom to add more space between buttons */
+  }
+  
+  
   .selectbut {
-
     display: flex;
-    align-items: center;
-
-
+    align-items: flex-start; /* Align children to the start of the cross axis (top) */
+    position: absolute;
+    top: 8%;
+    left: 44.5%;
+  }
+  
+  .selectbut button{
+    margin-right: 30px;
 
   }
   
+
+  .next {
+      position: absolute;
+      bottom: 0;
+      left: 45;
+      transform: translateX(-50%);
+    
+  }
